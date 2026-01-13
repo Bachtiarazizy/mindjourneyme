@@ -69,13 +69,13 @@ export default function BlogPage() {
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center justify-center gap-4">
-              <div className="h-0.5 flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
+              <div className="h-0.5 flex-1 bg-linear-to-r from-transparent via-border to-transparent" />
               <div className="flex gap-2">
                 <Sparkles className="w-5 h-5 text-primary animate-pulse" />
                 <Sparkles className="w-4 h-4 text-primary/70 animate-pulse" style={{ animationDelay: "0.3s" }} />
                 <Sparkles className="w-5 h-5 text-primary animate-pulse" style={{ animationDelay: "0.6s" }} />
               </div>
-              <div className="h-0.5 flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
+              <div className="h-0.5 flex-1 bg-linear-to-r from-transparent via-border to-transparent" />
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function BlogPage() {
                 <Sparkles className="w-12 h-12 text-primary mx-auto" />
               </div>
               <blockquote className="font-serif text-2xl md:text-3xl text-foreground italic mb-6 leading-relaxed">&quot;Setiap perjalanan dimulai dengan satu langkah kecil. Yang penting adalah terus melangkah.&quot;</blockquote>
-              <p className="text-muted-foreground">- Terinspirasi dari My Neighbor Totoro</p>
+              {/* <p className="text-muted-foreground">- Terinspirasi dari My Neighbor Totoro</p> */}
             </div>
           </div>
         </section>

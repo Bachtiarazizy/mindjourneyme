@@ -137,40 +137,33 @@ export default function NewestArticles({ posts }: NewestArticlesProps) {
                       </div>
                     )}
                   </div>
-
                   {/* Content */}
+
                   <div className="p-6 flex-1 flex flex-col">
                     <a href={`/blog/${post.slug.current}`} className="block flex-1">
-                      <h3 className="font-serif text-xl font-bold text-card-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">{post.title}</h3>
+                      <h3 className="font-serif text-lg font-bold text-card-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">{post.title}</h3>
                     </a>
-                    <p className="text-muted-foreground mb-4 line-clamp-2 leading-relaxed">{post.excerpt}</p>
+                    <p className="text-muted-foreground text-sm mb-3 line-clamp-2 leading-relaxed">{post.excerpt}</p>
 
                     {/* Meta Info */}
-                    <div className="flex items-center justify-between pt-3 border-t border-border">
+                    <div className="flex items-center justify-between text-sm pt-2 border-border border-t">
                       <div className="flex items-center gap-2">
                         {post.author.image ? (
-                          <div className="w-8 h-8 rounded-full overflow-hidden relative border-2 border-primary/20">
+                          <div className="w-6 h-6 rounded-full overflow-hidden relative border-2 border-primary/20">
                             <Image src={urlForImage(post.author.image)?.url() || ""} alt={post.author.name} fill className="object-cover" />
                           </div>
                         ) : (
-                          <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
-                            <User className="w-4 h-4 text-primary" />
+                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                            <User className="w-3 h-3 text-primary" />
                           </div>
                         )}
-                        <span className="text-sm font-bold text-foreground">{post.author.name}</span>
+                        <span className="text-xs font-bold text-foreground">{post.author.name}</span>
                       </div>
-                      <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1 text-xs text-muted-foreground">
                         <Calendar className="w-3 h-3" />
                         <span>{formatDate(post.publishedAt)}</span>
                       </div>
                     </div>
-
-                    {/* Read Time */}
-                    {/* <div className="mt-3 pt-3 border-t border-border">
-                      <span className="text-xs text-muted-foreground">
-                        ⏱️ {post.readTime} menit baca
-                      </span>
-                    </div> */}
                   </div>
                 </div>
               </article>

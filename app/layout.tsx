@@ -18,7 +18,10 @@ const ptSans = PT_Sans({
 
 export const metadata: Metadata = {
   title: "Mindjourneyme - Jurnal Perjalanan Tumbuhku",
-  description: "",
+  description: "Mindjourneyme adalah jurnal perjalanan tumbuh—ruang refleksi, kesadaran diri, dan pencarian makna hidup melalui tulisan, pengalaman, dan proses menjadi versi diri yang lebih utuh.",
+  verification: {
+    google: "-qqEwyG_hrR5c49eowpEXzz3y0Co5SREC1lFfCozYN8",
+  },
 };
 
 export default function RootLayout({
